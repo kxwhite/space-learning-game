@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.nav-bg{
+    background-color: black;
+    background-image: url("../public/game_assets/navbg.png");
+}
+
+.nav-font{
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.nav-title{
+    letter-spacing: 4px;
+}
+
+.nav-heading > p{
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.nav-username{
+    text-transform: capitalize;
+}
+

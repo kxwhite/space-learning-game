@@ -1,0 +1,26 @@
+.modal_title{
+    font-size: 40px;
+}
+
+.modal_body{
+    background-color: black;
+    background-image: url("../public/game_assets/modalbg.png");
+    font-family: 'VT323', monospace;
+    color: white;
+    border-top: 0 none;
+    border-bottom: 0 none;
+    
+}
+
+.q_text{
+    font-size: 20px;
+}
+
+.button_text{
+    font-size: 20px;
+}
+
+.hint_button{
+    color: white;
+    --bs-btn-hover-color: white;
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css?family=DotGothic16");
+
+#more-info-link {
+    color: rgb(199, 199, 10);
+}
+.back-to-planets-button {
+    background-color: rgb(105, 8, 48);
+    color: rgb(255, 255, 255);
+    border: solid rgb(199, 199, 10) 1px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    font-family: 'DotGothic16';
+}
+
+.back-to-planets-button:hover {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+}
+
+.planet-info {
+    background-color: rgba(27, 27, 17, 0.4);
+    border: solid rgb(199, 199, 10) 1px;
+    border-radius: 0;
+    position: absolute;
+    justify-content: center;
+    width: 40%;
+    transform: translate(0%, 10%);
+}
+
+.planet-info-header {
+    background-color: rgba(27, 27, 17, 0.4);
+    color: white;
+    border: solid rgb(199, 199, 10) 1px;
+    font-family: 'VT23', monospace;
+    text-align: center;
+}
+
+.text1 {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'VT23', monospace;
+    text-align: justify;
+    padding: 15px;
+}
+
+/* To make the text in the middle of the image at all times*/
+.level-selector {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 50%;
+    /* align-items: center; */
+    color: rgb(226, 213, 21);
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+/* Font and size of text aswell as making it so that its at the front of image */
+.level-selector>p {
+    position: absolute;
+    font-size: 2vw;
+    font-family: 'DotGothic16';
+    z-index: 1;
+}
+
+.level-selector>i {
+    position: absolute;
+    z-index: 1;
+    font-size: 2vw;
+}
+
+
+.level-selector>img {
+    width: 82%;
+    height: 82%;
+}
+
+#basics {
+    left: 30%;
+    top: 18%;
+}
+
+#basics-icon {
+    left: 23%;
+    top: 11%;
+}
+
+#advanced {
+    left: 62%;
+    top: 38%;
+}
+
+#advanced-icon {
+    left: 68%;
+    top: 32%;
+
+}
+
+#expert {
+    left: 24%;
+    top: 51%;
+
+}
+
+#expert-icon {
+    left: 28%;
+    top: 45%;
+
+}
+
+#god {
+    left: 50%;
+    top: 79%;
+}
+
+#god-icon {
+    left: 56%;
+    top: 72%;
+}

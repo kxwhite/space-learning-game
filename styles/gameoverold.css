@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Main Content */
+.gameover-page--container {
+  height: 100vh;
+  width: 100%;
+  background: #000019 url(https://wallpapercrafter.com/th8001/543408-pixels-pixel-art-pixelated-universe-space-stars.jpg) no-repeat fixed center / cover;
+}
+
+.gameover-page--title, .gameover-page--text, .gameover-page--buttons {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.gameover-page--text {
+  max-width: 800px;
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 32px;
+  /* font-size: 2.2vw; */
+  /* font-size: calc(.5em + 1vw); */
+  top: 225px;
+  opacity: 70%;
+}
+.gameover-page--score {
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 32px;
+  top: 325px;
+  /* opacity: 70%; */
+}
+
+/* Buttons CSS */
+.gameover-page--buttons {
+  top: 360px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gameover-page--button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+.gameover-page--button {
+  font-size: 25px;
+  color: white;
+  height: auto;
+  margin: 10px;
+  font-family: 'VT323';
+
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gameover-page--button:active {
+  top: 2px;
+}
+
+.gameover-page--button {
+  position: relative;
+  margin: 100px 0;
+  font-family: 'VT323';
+  text-transform: uppercase;
+
+  font-size: 25px;
+  color: white;
+}
+
+.gameover-page--button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -10px;
+  right: -10px;
+  background: #F72D28;
+  z-index: -1;
+}
+
+.gameover-page--button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: -6px;
+  right: -6px;
+  background: #F72D28;
+  z-index: -1;
+}
+
+.gameover-page--button {
+  padding: 20px 40px;
+  position: relative;
+  background: #F72D28;
+  width: auto;
+  z-index: 2;
+}
+
+/* Rocket, Explosion & Spaceman CSS */
+.gameover-page--rocket, .gameover-page--explosion, .gameover-page--spaceman {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  rotate: 135deg;
+  scale: 50%;
+}
+
+.gameover-page--explosion {
+  bottom: 20%;
+  left: 21%;
+  rotate: 160deg;
+}
+
+.gameover-page--spaceman {
+  bottom: -30%;
+  left: 30%;
+  scale: 50%;
+  rotate: 45deg;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .gameover-page--rocket, .gameover-page--explosion, .gameover-page--spaceman {
+    visibility: hidden;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.gameover--container {
+  height: 100vh;
+  width: 100%;
+  /* background: #000019 url(../public/gameover_assets/gameover-bg.gif) no-repeat fixed center / cover; */
+  /* background: #000019 url(../public/gameover_assets/gameover-bg2.gif) no-repeat fixed center / cover; */
+  /* background: #000019 url(../public/gameover_assets/gameover-bg3.jpg) no-repeat fixed center / cover; */
+  background: #000019 url(../public/gameover_assets/gameover-bg4.jpg) no-repeat fixed center / cover;
+}
+.gameover--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2%;
+}
+
+.gameover--lives {
+  margin-top: 2%;
+}
+
+.gameover--heart, .gameover--hearts {
+  filter: invert(42%) sepia(92%) saturate(6189%) hue-rotate(349deg) brightness(100%) contrast(94%);
+}
+
+.gameover--hearts {
+  display: none;
+}
+
+.gameover--title {
+  font-family: 'VT323', monospace;
+  font-size: 20vh;
+  color: #FBCA28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 10vh;
+  letter-spacing: 25px;
+  line-height: 16vh;
+  margin: 0px 50px;
+  padding-top: 100px;
+  text-shadow: rgba(240, 45, 169, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.gameover--cont-txt {
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  color: #f02eaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 2vh;
+  margin: 0;
+}
+
+.gameover--score, .gameover--score-text {
+  font-family: 'VT323', monospace;
+  font-size: 2vh;
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 2vh;
+  margin: 0;
+}
+
+.gameover--score-text {
+  margin: 3vh auto;
+  max-width: 50%;
+}
+
+.gameover--score-span {
+  margin-left: 1%;
+}
+
+.gameover--links {
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  color: antiquewhite;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  min-height: 2vh;
+  margin: 0;
+}
+
+.gameover--yes-link:hover, .gameover--no-link:hover {
+  color: #f02eaa;
+}
+
+
+.gameover--alien-select {
+  margin-top: 2%;
+  filter: invert(88%) sepia(45%) saturate(4365%) hue-rotate(332deg) brightness(99%) contrast(99%);
+}
+
+.gameover--yes-link>.gameover--alien-select, .gameover--no-link>.gameover--alien-select {
+  display: none;
+}
+
+.gameover--yes-link:hover>.gameover--alien-select, .gameover--no-link:hover>.gameover--alien-select  {
+  display: inline-flex;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .gameover--title {
+    font-size: 10vh;
+    min-height: 5vh;
+    letter-spacing: 2%;
+    line-height: 9vh;
+    margin: 0px 50px;
+    padding-top: 100px;
+    text-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  }
+
+  .gameover--hearts {
+    display: block;
+  }
+
+  .gameover--heart {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

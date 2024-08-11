@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.signup-page--body {
+  min-height: 100%;
+  background-image: url(https://wallpapercrafter.com/th800/161892-pixel-art-pixelated-pixels-digital-art-space-black-background-universe-planet-stars-Moon-Mars.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+/* .background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+} */
+
+.signup-page--form {
+  height: 700px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+.signup-page--form * {
+  font-family: 'VT323', monospace;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+.signup-page--form-title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.signup-page--form-label {
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.signup-page--form-input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 300;
+}
+::placeholder {
+  color: #e5e5e5;
+}
+.signup-page--form-button {
+  background: #3498db;
+  color: #fff;
+  margin-top: 40px;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-page--form-button:hover {
+  background: #2980b9;
+  box-shadow: 0 8px 8px -4px rgb(91, 168, 194);
+}
+
+.signup-page--form-button:active {
+  background: #3498db;
+  box-shadow: none;
+
+}
+
+.signup-page--form-helpers {
+  margin-top: 25px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}

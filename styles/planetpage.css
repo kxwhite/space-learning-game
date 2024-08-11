@@ -1,0 +1,105 @@
+.planet-background {
+  background-image: url("../public/planetpage_assets/space_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* using a grid system for the div that contains the planets */
+.planet-container {
+  display: grid;
+  margin: auto;
+  width: 85%;
+
+}
+
+.planet-container>div {
+  position: relative;
+}
+
+
+/* To make the text in the middle of the image at all times*/
+.planet-jsx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Setting the size of the planet image */
+.planet-jsx>img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Font and size of text aswell as making it so that its at the front of image */
+.planet-jsx>button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  position: absolute;
+  font-size: 4vw;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  z-index: 1;
+}
+
+/* Planet div size (controls the width and height for each planet div) 
+   Making it so that each planet is different size*/
+#planet1 {
+  width: 70%;
+  height: 70%;
+}
+
+#planet2 {
+  width: 60%;
+  height: 60%;
+}
+
+#planet3 {
+  width: 110%;
+  height: 110%;
+}
+
+#planet4 {
+  width: 80%;
+  height: 80%;
+}
+
+/* When hovering on one of the planet it will be highlighted and enlarged */
+.planets:hover{
+  filter: drop-shadow(0px 0px 2rem #4444dd);
+  transform: scale(1.1);
+}
+
+
+/* Changing size of planets and text aswell as grid boxes depending on the media size */
+@media (max-width: 1000px) {
+  .planet-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 0fr);
+    justify-items: center;
+    row-gap: 10px;
+  }
+
+  .planet-jsx>img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .planet-jsx>button {
+    position: absolute;
+    font-size: 5vh;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1000px) {
+  .planet-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 0fr);
+    justify-items: center;
+    align-items: center;
+  }
+}

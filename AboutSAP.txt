@@ -1,0 +1,10 @@
+﻿SAP
+
+
+SAP SE (Systems Applications and Products in Data Processing) is a German company, started by five IBM engineers in the 1970s. It is the world’s largest provider of enterprise resource planning (ERP) software. SAP S4/Hana is the latest software package which covers all day-to-day processes of enterprise and core capabilities, and optimised for SAP's in-memory database - SAP Hana. It integrates functions from lines of businesses as well as industry solutions, and also re-integrates portions of SAP Business Suit products. SAP ERP comprises several independent functional modules that can be purchased and customised according to the business requirements. Some functional modules are: Financial Accounting (FI), Controlling (CO), Sales & Distribution (SD), Materials Management (MM), Quality Management (QM), Production Planning (PP), Logistics Execution (LE), etc.
+ABAP is a primary programming language used to create, modify and enhance SAP applications. ABAP forms the basis of the entire SAP system.
+SAP is a part of Infosys's EAS (Enterprise Application Services) unit. Infosys SAP practice provides enterprises with end-to-end consulting, implementation and support services.
+
+
+To learn more about EAS unit and SAP Practice: https://infosystechnologies.sharepoint.com/sites/EnterpriseApplicationServices
+For training and certification: https://lex.infosysapps.com/web/en/page/lex_auth_013004586600325120402
