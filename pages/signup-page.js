@@ -51,7 +51,7 @@ export default function Signup() {
       >
         <h3 className="signup-page--form-title">Register Here</h3>
 
-        <label className="signup-page--form-label" for="name">
+        <label className="signup-page--form-label" htmlFor="name">
           Name
         </label>
         <input
@@ -64,7 +64,7 @@ export default function Signup() {
           {...register('name')}
         />
 
-        <label className="signup-page--form-label" for="email">
+        <label className="signup-page--form-label" htmlFor="email">
           Email address
         </label>
         <input
@@ -79,7 +79,7 @@ export default function Signup() {
           {...register('email')}
         />
 
-        <label className="signup-page--form-label" for="password">
+        <label className="signup-page--form-label" htmlFor="password">
           Password
         </label>
         <input
@@ -91,7 +91,7 @@ export default function Signup() {
           {...register('password')}
         />
 
-        <label className="signup-page--form-label" for="password">
+        <label className="signup-page--form-label" htmlFor="password">
           Confirm Password
         </label>
         <input

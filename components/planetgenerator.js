@@ -5,9 +5,9 @@ return (
 
     <div className='planet-jsx'>
         <button onClick={props.toggle}>{props.name}</button>
-        <img src= {props.img} alt = "Planet Sprites" ></img>
+        <img src={props.img} alt="Planet Sprites" />
     </div>
-    
+
 );
 
 }

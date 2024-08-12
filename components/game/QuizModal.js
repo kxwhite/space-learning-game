@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import GameOver from "../../pages/gameoverold";
 import Question from "./Question";
 
 function QuestionModal({ showQuestion, startGame, questions, questionIndex}) {
@@ -31,7 +30,7 @@ function QuestionModal({ showQuestion, startGame, questions, questionIndex}) {
           questionsLength,
           lowScoreBody
         },
-      }, { shallow: true });
+      }, undefined, { shallow: true });
     }
     if (questionIndex === 4 && score >= 4) {
       router.push("/congrats");
@@ -70,7 +69,7 @@ function QuestionModal({ showQuestion, startGame, questions, questionIndex}) {
         keyboard={false}
         dialogClassName="modal-100w"
       >
-        <Modal.Header className="modal_body">
+        <Modal.Header className="modal_body modal_header">
           <Modal.Title className="modal_title">
             {questionIndex < currentQuestion?.number
               ? "Question " +

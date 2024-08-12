@@ -6,7 +6,7 @@ import heart from "../public/gameover_assets/pixel-heart.svg";
 import alien from "../public/gameover_assets/pixel-alien.svg";
 import Link from 'next/link';
 
-export default function GameOverNew() {
+export default function GameOver() {
   const router = useRouter();
 
   const {
@@ -19,6 +19,8 @@ export default function GameOverNew() {
     lowScoreBody,
     noShipsBody,
   };
+
+  console.log("Score: ", score);
 
   return (
     <div className="gameover--container">

@@ -6,7 +6,7 @@ import rocket from '../public/gameover_assets/gameover-rocket.png'
 import explosion from "../public/gameover_assets/gameover-explosion.png";
 import spaceman from "../public/gameover_assets/gameover-astronaut.png";
 
-export default function GameOver() {
+export default function GameOverOld() {
   const router = useRouter();
 
   const {
