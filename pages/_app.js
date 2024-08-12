@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import '../styles/fonts.css'
 import '../styles/home-page.css';
 import '../styles/gameover.css'
 import '../styles/congrats.css'

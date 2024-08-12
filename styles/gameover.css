@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); */
 
 .gameover--container {
   height: 100vh;
   width: 100%;
-  /* background: #000019 url(../public/gameover_assets/gameover-bg.gif) no-repeat fixed center / cover; */
-  /* background: #000019 url(../public/gameover_assets/gameover-bg2.gif) no-repeat fixed center / cover; */
-  /* background: #000019 url(../public/gameover_assets/gameover-bg3.jpg) no-repeat fixed center / cover; */
   background: #000019 url(../public/gameover_assets/gameover-bg4.jpg) no-repeat fixed center / cover;
 }
 .gameover--top {
