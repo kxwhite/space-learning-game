@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import '../styles/home-page.css';
 import '../styles/gameover.css'
 import '../styles/congrats.css'
 import '../styles/planetpage.css';
 import '../styles/globals.css';
-import '../styles/home-page.css';
 import '../styles/login-page.css';
 import '../styles/signup-page.css';
 import '../styles/navbar.css';
