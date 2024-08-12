@@ -10,7 +10,7 @@ import '../styles/navbar.css';
 import "../styles/modal.css";
 import '../styles/planet.css'
 import { ToastContainer } from 'react-toastify';
-import { SessionProvider, useSession } from 'next-auth/react';
+import { SessionProvider } from 'next-auth/react';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "../components/navbar";
 import { useEffect } from "react";
