@@ -3,122 +3,214 @@
 @import url("https://fonts.googleapis.com/css?family=DotGothic16");
 
 #more-info-link {
-    color: rgb(199, 199, 10);
-}
-.back-to-planets-button {
-    background-color: rgb(105, 8, 48);
-    color: rgb(255, 255, 255);
-    border: solid rgb(199, 199, 10) 1px;
-    position: absolute;
-    left: 5%;
-    top: 10%;
-    font-family: 'DotGothic16';
+  color: #FBCA28;
 }
 
-.back-to-planets-button:hover {
-    background-color: #4CAF50;
-    /* Green */
-    color: white;
+.back-to-planets-button {
+  font-family: 'VT323';
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+
+  height: auto;
+  width: 150px;
+
+  margin: 40% 14%;
+  padding: 10px 20px;
+
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  background: #FBCA28;
+  z-index: 2;
+
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.back-to-planets-button:active {
+  top: 2px;
+}
+
+.back-to-planets-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -10px;
+  right: -10px;
+  background: #FBCA28;
+  z-index: -1;
+}
+
+.back-to-planets-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: -6px;
+  right: -6px;
+  background: #FBCA28;
+  z-index: -1;
 }
 
 .planet-info {
-    background-color: rgba(27, 27, 17, 0.4);
-    border: solid rgb(199, 199, 10) 1px;
-    border-radius: 0;
-    position: absolute;
-    justify-content: center;
-    width: 40%;
-    transform: translate(0%, 10%);
+  background-color: rgba(27, 27, 17, 0.4);
+  border: 1px solid rgba(251, 202, 40, 0.8);
+  border-radius: 0;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  z-index: 0;
 }
 
 .planet-info-header {
-    background-color: rgba(27, 27, 17, 0.4);
-    color: white;
-    border: solid rgb(199, 199, 10) 1px;
-    font-family: 'VT23', monospace;
-    text-align: center;
+  background-color: rgba(27, 27, 17, 0.4);
+  color: white;
+  border: 1px solid rgb(251, 202, 40, 0.8);
+  font-family: 'VT323', monospace;
+  text-align: center;
 }
 
 .text1 {
-    color: rgba(255, 255, 255, 1);
-    font-family: 'VT23', monospace;
-    text-align: justify;
-    padding: 15px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'VT323', monospace;
+  text-align: justify;
+  padding: 15px;
 }
 
-/* To make the text in the middle of the image at all times*/
 .level-selector {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 50%;
-    /* align-items: center; */
-    color: rgb(226, 213, 21);
-    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: #FBCA28;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  z-index: 1;
+  margin: 0 auto;
 }
 
-/* Font and size of text aswell as making it so that its at the front of image */
 .level-selector>p {
-    position: absolute;
-    font-size: 2vw;
-    font-family: 'DotGothic16';
-    z-index: 1;
+  position: absolute;
+  font-size: 2vw;
+  font-family: 'DotGothic16';
+  z-index: 1;
 }
 
 .level-selector>i {
-    position: absolute;
-    z-index: 1;
-    font-size: 2vw;
+  position: absolute;
+  z-index: 1;
+  font-size: 2vw;
 }
 
-
 .level-selector>img {
-    width: 82%;
-    height: 82%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #basics {
-    left: 30%;
-    top: 18%;
+  left: 30%;
+  top: 18%;
 }
 
 #basics-icon {
-    left: 23%;
-    top: 11%;
+  left: 34%;
+  top: 11%;
 }
 
 #advanced {
-    left: 62%;
-    top: 38%;
+  left: 62%;
+  top: 38%;
 }
 
 #advanced-icon {
-    left: 68%;
-    top: 32%;
+  left: 68%;
+  top: 32%;
 
 }
 
 #expert {
-    left: 24%;
-    top: 51%;
+  left: 24%;
+  top: 51%;
 
 }
 
 #expert-icon {
-    left: 28%;
-    top: 45%;
+  left: 28%;
+  top: 45%;
 
 }
 
 #god {
-    left: 50%;
-    top: 79%;
+  left: 50%;
+  top: 79%;
 }
 
 #god-icon {
-    left: 56%;
-    top: 72%;
+  left: 56%;
+  top: 72%;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  #basics-icon {
+    left: 29%;
+  }
+
+  .planet-info {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  .back-to-planets-button {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .container-fluid {
+    padding: 0 10px;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .col-sm-6 {
+    text-align: center;
+  }
+
+  .level-selector>p {
+    font-size: 4vw;
+  }
+
+  .level-selector>i {
+    font-size: 4vw;
+  }
+
+  .level-selector>img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .col-sm-5 {
+    padding: 0;
+  }
 }

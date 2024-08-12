@@ -5,8 +5,8 @@ import { useRouter } from "next/router";
 import { NavData } from "../context/nav_context";
 import { useContext } from "react";
 
-export default function navbar() {
-  let profile = "/game_assets/profile.png";
+export default function Navbar() {
+  let profile = "/game_assets/profile.svg";
 
   const { data: session } = useSession();
   const router = useRouter();
@@ -22,9 +22,9 @@ export default function navbar() {
   return (
     <>
     {session?.user?
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top nav-bg">
+    <nav className="navbar navbar-expand-lg navbar-dark sticky-top nav-bg">
       <div className="container-fluid">
-        <Link className="navbar-brand nav-title nav-font" href="\planetpage">SPACE QUIZ</Link>
+        <Link className="navbar-brand nav-title nav-font" href="/planetpage">SPACE QUIZ</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -46,17 +46,17 @@ export default function navbar() {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle nav-font nav-username"
+                className="nav-link dropdown-toggle nav-font nav-username d-flex justify-content-center align-items-center"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img className="rounded-circle" src={profile} width="40" /> {session?.user.name}
+                <img className="rounded-circle mx-2 bg-white" src={profile} width="40" height="40" /> {session?.user.name}
               </a>
-              <ul className="dropdown-menu dropdown-menu-end nav-font">
+              <ul className="dropdown-menu dropdown-menu-dark dropdown-menu-end nav-font">
                 <li>
-                  <Link className="dropdown-item" href="\planetpage">
+                  <Link className="dropdown-item" href="/planetpage">
                     Profile
                   </Link>
                 </li>

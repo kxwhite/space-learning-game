@@ -58,7 +58,7 @@ const Game = () => {
     //init game
     useEffect(() => {
 
-        setHeader("Planet SAP")
+        setHeader("Planet HTML")
 
         spriteSheet = spriteSheetLoader("/game_assets/spritesheet.png");
         backGround = spriteSheetLoader("/game_assets/bg.png");
@@ -144,7 +144,7 @@ const Game = () => {
             handleClick(e);
         });
 
-        
+
 
         //clean up when component unmounts.
         return function cleanup() {
@@ -203,7 +203,7 @@ const Game = () => {
                     }
                 }
             })
-        } else if (rocket.hitPoints < 1) {//when the player runs out of lifes
+        } else if (rocket.hitPoints < 1) {//when the player runs out of lives
             backGroundSprite.draw()
             rocket.draw()
             menu.draw(rocket.hitPoints, menu.dWidth + 5)
@@ -213,7 +213,7 @@ const Game = () => {
               query: {
                 noShipsBody
               },
-            }, { shallow: true });
+            }, undefined, { shallow: true });
 
 
         }else if(!gameState){//what to draw when game is paused
@@ -274,58 +274,60 @@ const Game = () => {
 let questions = [
     {
         number: 1,
-        text: "What is SAP?",
+        text: "What does HTML stand for?",
         options: [
-            "Services Applications and Products",
-            "Systems Applications and Products",
-            "Systems Applications and Processes",
-            "Services Applications and Processes"
+            "HyperText Markup Language",
+            "HyperText Media Language",
+            "HyperLink Text Markup Language",
+            "HyperText Modern Language"
+        ],
+        correctAnswer: 0
+    },
+    {
+        number: 2,
+        text: "Which HTML tag is used to define the largest heading?",
+        options: [
+            "<heading>",
+            "<h1>",
+            "<head>",
+            "<header>"
         ],
         correctAnswer: 1
     },
     {
-        number: 2,
-        text: "Which business unit does SAP belongs to?",
+        number: 3,
+        text: "How can you create a hyperlink in HTML?",
         options: [
-            "DX",
-            "DNA",
-            "EAS",
-            "IVS"
+            "<link href=\"url\">link text</link>",
+            "<a link=\"url\">link text</a>",
+            "<a href=\"url\">link text</a>",
+            "<hyperlink href=\"url\">link text</hyperlink>"
         ],
         correctAnswer: 2
     },
     {
-        number: 3,
-        text: "What is the primary programming language to create a SAP application?",
-        options: [
-            "Java",
-            "C#",
-            "C++",
-            "ABAP"
-        ],
-        correctAnswer: 3
-    },
-    {
         number: 4,
-        text: "What is SAP Fiori?",
+        text: "What is the correct HTML element for inserting a line break?",
         options: [
-            "SAP's database",
-            "SAP's user experience",
-            "SAP's ERP Module"
+            "<break>",
+            "<lb>",
+            "<br>",
+            "<line>"
         ],
-        correctAnswer: 1
+        correctAnswer: 2
     },
     {
         number: 5,
-        text: "What is SAP's in memory database?",
+        text: "How do you add a background color to an HTML element?",
         options: [
-            "SAP Hana",
-            "SAP Fiori",
-            "SAP Oracle",
-            "SAP SoH"
+            "<element style=\"color: background;\">",
+            "<element style=\"bgcolor: color;\">",
+            "<element style=\"background-color: color;\">",
+            "<element bg-color=\"color\">"
         ],
-        correctAnswer: 0
+        correctAnswer: 2
     }
-]
+];
+
 
 export default Game;

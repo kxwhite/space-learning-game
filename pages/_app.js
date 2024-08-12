@@ -16,18 +16,34 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "../components/navbar";
 import { useEffect } from "react";
 import NavContext from '../context/nav_context';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 
+  // useEffect(() => {
+  //   require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  // }, []);
+
   useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    (async () => {
+      const bootstrap = await import(
+        "bootstrap/dist/js/bootstrap.bundle.min.js"
+      );
+    })();
   }, []);
 
   return (
     <>
+      <Head>
+        <title>Space Quiz</title>
+        <meta
+          name="description"
+          content="Embark on a retro space-themed adventure where your knowledge unlocks the mysteries of the universe. Challenge yourself through levels of cosmic trivia and explore pixelated planets in this intergalactic quiz journey!"
+        />
+      </Head>
       <SessionProvider session={session}>
         <NavContext>
-          <Navbar/>
+          <Navbar />
           <Component {...pageProps} />
         </NavContext>
         <ToastContainer position="bottom-center" limit={1} />
