@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../styles/gameover.css'
-import '../styles/gameoverold.css'
 import '../styles/congrats.css'
 import '../styles/planetpage.css';
 import '../styles/globals.css';
