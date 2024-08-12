@@ -111,10 +111,12 @@
   z-index: 1;
 }
 
-.level-selector>i {
+.select-icon {
   position: absolute;
   z-index: 1;
   font-size: 2vw;
+  width: 4%;
+  height: 6%;
 }
 
 .level-selector>img {
@@ -169,10 +171,6 @@
 
 /* Media Query for Small Screens */
 @media (max-width: 768px) {
-  #basics-icon {
-    left: 29%;
-  }
-
   .planet-info {
     width: 100%;
     margin: 20px 0;
@@ -201,7 +199,7 @@
     font-size: 4vw;
   }
 
-  .level-selector>i {
+  .select-icon {
     font-size: 4vw;
   }
 
