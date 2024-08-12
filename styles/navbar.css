@@ -2,7 +2,6 @@
 
 .nav-bg{
     background-color: black;
-    background-image: url("../public/game_assets/navbg.png");
 }
 
 .nav-font{
@@ -27,3 +26,11 @@
     text-transform: capitalize;
 }
 
+.rounded-circle {
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}

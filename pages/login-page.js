@@ -44,7 +44,7 @@ export default function Login() {
       <form className="login-page--form" onSubmit={handleSubmit(submitHandler)}>
         <h3 className="login-page--form-title">Login Here</h3>
 
-        <label className="login-page--form-label" for="email">
+        <label className="login-page--form-label" htmlFor="email">
           Your email
         </label>
         <input
@@ -59,7 +59,7 @@ export default function Login() {
           {...register('email')}
         />
 
-        <label className="login-page--form-label" for="password">
+        <label className="login-page--form-label" htmlFor="password">
           Password
         </label>
         <input
@@ -80,7 +80,7 @@ export default function Login() {
           value="lsRememberMe"
           id="rememberMe"
         />
-        <label className="login-page--form-remember-me-label" for="rememberMe">
+        <label className="login-page--form-remember-me-label" htmlFor="rememberMe">
           Remember me
         </label>
 

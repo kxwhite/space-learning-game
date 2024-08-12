@@ -10,7 +10,9 @@
   display: grid;
   margin: auto;
   width: 85%;
-
+  max-width: 100%;
+  overflow: hidden;
+  padding: 10% 0;
 }
 
 .planet-container>div {
@@ -44,7 +46,7 @@
   z-index: 1;
 }
 
-/* Planet div size (controls the width and height for each planet div) 
+/* Planet div size (controls the width and height for each planet div)
    Making it so that each planet is different size*/
 #planet1 {
   width: 70%;
@@ -101,5 +103,6 @@
     grid-template-rows: repeat(2, 0fr);
     justify-items: center;
     align-items: center;
+    padding-top: 10vh;
   }
 }
