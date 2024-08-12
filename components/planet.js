@@ -27,18 +27,14 @@ const planet = (props) => {
           <div className="col-sm-6">
             <div className="level-selector">
               <p id="basics">Basics</p>
-              <Link href="/game" id="basics-icon">
-                {/* <i className="bi bi-plus-circle-fill" id="basics-icon"></i> */}
+              <Link href="/game" id="basics-icon" className='select-icon-link'>
                 <PlusIcon className="select-icon" id="basics-icon"/>
               </Link>
               <p id="advanced">Advanced</p>
-              {/* <i className="bi bi-dash-circle-fill" id="advanced-icon"></i> */}
               <DashIcon className="select-icon" id="advanced-icon"/>
               <p id="expert">Expert</p>
-              {/* <i className="bi bi-dash-circle-fill" id="expert-icon"></i> */}
               <DashIcon className="select-icon" id="expert-icon"/>
               <p id="god">GOD TIER</p>
-              {/* <i className="bi bi-dash-circle-fill" id="god-icon"></i> */}
               <DashIcon className="select-icon" id="god-icon"/>
               <img src={props.img} className="img-fluid" alt={props.name} />
             </div>

@@ -111,6 +111,12 @@
   z-index: 1;
 }
 
+.select-icon-link {
+  text-decoration: none;
+  color: #FBCA28;
+  cursor: pointer;
+}
+
 .select-icon {
   position: absolute;
   z-index: 1;

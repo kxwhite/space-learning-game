@@ -19,6 +19,11 @@ a {
   text-decoration: none;
 }
 
+Link {
+  color: inherit;
+  text-decoration: none;
+}
+
 html::-webkit-scrollbar {
   width: 12px;
   background-color: black;
