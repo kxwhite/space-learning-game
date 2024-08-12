@@ -18,6 +18,14 @@
     url('/path/to/fonts/VT323-Bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'DotGothic16';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/path/to/fonts/DotGothic16-Regular.woff2') format('woff2'),
+    url('/path/to/fonts/DotGothic16-Regular.woff') format('woff');
+}
+
 body {
   font-family: 'VT323', monospace;
 }
