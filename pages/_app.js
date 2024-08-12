@@ -39,6 +39,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           name="description"
           content="Embark on a retro space-themed adventure where your knowledge unlocks the mysteries of the universe. Challenge yourself through levels of cosmic trivia and explore pixelated planets in this intergalactic quiz journey!"
         />
+        <meta charSet="UTF-8" />
       </Head>
       <SessionProvider session={session}>
         <NavContext>
